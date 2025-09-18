@@ -18,10 +18,26 @@ Calculadora creada en Flet que permite sumar, restar, dividir, multiplicar, saca
 <img width="263" height="271" alt="Estructura" src="https://github.com/user-attachments/assets/f23aa72f-025e-49dd-a304-a3d104bd278f" />
 
 ## 🧩 Explicación del código
-Describe las funciones principales.
-
+Este increíble código en flet crea una calculadora con una interfaz visual donde puedes realizar operaciones como suma, resta, multiplicación, división, porcentaje y raíz cuadrada.
 ## 🛠️ Posibles errores y soluciones
-Ejemplo: división entre cero.
+División por cero
+Error: Intentar dividir por cero.
+Solución: Verifica el divisor antes de realizar la operación. Si el divisor es cero, muestra un mensaje de error como "Error: División por cero no permitida."
+
+Entrada no numérica
+Error: Ingresar caracteres no numéricos.
+Solución: Asegúrate de que solo se ingresen números. Si se detecta un carácter no numérico, muestra un mensaje de error.
+
+Operación no soportada
+Error: Intentar realizar una operación no soportada (e.j., un operador no reconocido).
+Solución: Valida que el operador ingresado sea uno de los permitidos (suma, resta, multiplicación, división, porcentaje y raíz). Si no es así, muestra un mensaje de error."
+
+Desbordamiento de número
+Error: Resultado demasiado grande o pequeño para procesar.
+Solución: Verifica si el número es razonable. Si no, muestra un mensaje de error.
+Falta de entrada
+Error: No ingresar valores para operar.
+Solución: Asegurarse de que se ingresen todos los números necesarios para la operación antes de proceder.
 
 ## 🚀 Cómo ejecutar
 1- Abir main.py en VSC
@@ -31,7 +47,7 @@ Ejemplo: división entre cero.
 5- Esperar a que cargue la página web local
 
 
-👤 Plantilla de Manual de Usuario (Markdown)
+👤 Manual de Usuario (Markdown)
 # Manual de Usuario
 
 ## 🎯 Presentación de la aplicación
@@ -62,3 +78,5 @@ La Calculadora Básica permite realizar operaciones de suma, resta, multiplicaci
 ## ❌ Errores comunes
 - División entre cero.
 - Entradas inválidas (como letras u operaciones imposibles).
+- Resultado demasiado grande o pequeño para procesar.
+- Ingresar carácteres no numéricos.
