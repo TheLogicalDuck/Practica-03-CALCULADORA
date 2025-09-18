@@ -1,81 +1,71 @@
-# Documents app
+📘 Manual Técnico (Markdown)
+# Manual Técnico
 
-## Run the app
+## 📌 Descripción del proyecto
+Calculadora creada en Flet que permite sumar, restar, dividir, multiplicar, sacar raíz cuadrada y sacar porcentajes.
 
-### uv
+## 🖥️ Tecnologías usadas
+- Python 3.12.10
+- Flet (0.28.3)
 
-Run as a desktop app:
+## ⚙️ Requisitos técnicos
+- Tener instalado Python 3.12.10 o superior.
+- Tener Python en el Path
+- Instalar dependencias con pip install flet.
 
-```
-uv run flet run
-```
+## 📂 Estructura de archivos
+Practica-03-CALCULADORA/
+│── README.md
+│──.gitattributes
+│──.gitignore
+│──pyproject (HIDDEN)
+│── flujo_suma.png
+│── flujo_resta.png
+│── flujo_division.png
+└── src/
+	├── main.py
+	└── assets/
+        ├──splash_android.pngs
+        └──icon.png
 
-Run as a web app:
+## 🧩 Explicación del código
+Describe las funciones principales.
 
-```
-uv run flet run --web
-```
+## 🛠️ Posibles errores y soluciones
+Ejemplo: división entre cero.
 
-### Poetry
+## 🚀 Cómo ejecutar
+1- Abir main.py en VSC
+2- Presionar F5
+3- Elegir un interprete de Python
+4- Usar python debugger
+5- Esperar a que cargue la página web local
 
-Install dependencies from `pyproject.toml`:
 
-```
-poetry install
-```
+👤 Plantilla de Manual de Usuario (Markdown)
+# Manual de Usuario
 
-Run as a desktop app:
+## 🎯 Presentación de la aplicación
+La Calculadora Básica permite realizar operaciones de suma, resta, multiplicación y división.
 
-```
-poetry run flet run
-```
+## 🖥️ Requisitos de uso
+- Tener instalado Python 3.12+.
+- Instalar la librería Flet.
 
-Run as a web app:
+## ▶️ Pasos para ejecutar
+1. Descargar o clonar el proyecto desde GitHub.
+2. Abrir terminal en la carpeta del proyecto.
+3. Ejecutar: flet run src/main.py
 
-```
-poetry run flet run --web
-```
+## 🔢 Instrucciones de uso
+1. Escribir el primer número.
+2. Escribir el segundo número.
+3. Presionar el botón de la operación deseada.
+4. Ver el resultado.
 
-For more details on running the app, refer to the [Getting Started Guide](https://flet.dev/docs/getting-started/).
+## 📸 Ejemplo
 
-## Build the app
 
-### Android
-
-```
-flet build apk -v
-```
-
-For more details on building and signing `.apk` or `.aab`, refer to the [Android Packaging Guide](https://flet.dev/docs/publish/android/).
-
-### iOS
-
-```
-flet build ipa -v
-```
-
-For more details on building and signing `.ipa`, refer to the [iOS Packaging Guide](https://flet.dev/docs/publish/ios/).
-
-### macOS
-
-```
-flet build macos -v
-```
-
-For more details on building macOS package, refer to the [macOS Packaging Guide](https://flet.dev/docs/publish/macos/).
-
-### Linux
-
-```
-flet build linux -v
-```
-
-For more details on building Linux package, refer to the [Linux Packaging Guide](https://flet.dev/docs/publish/linux/).
-
-### Windows
-
-```
-flet build windows -v
-```
-
-For more details on building Windows package, refer to the [Windows Packaging Guide](https://flet.dev/docs/publish/windows/).
+## ❌ Errores comunes
+- División entre cero.
+- Entradas inválidas (como letras u operaciones imposibles).
