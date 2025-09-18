@@ -80,8 +80,8 @@ La Calculadora Básica permite realizar operaciones de suma, resta, multiplicaci
 - Entradas inválidas (como letras u operaciones imposibles).
 - Resultado demasiado grande o pequeño para procesar.
 - Ingresar carácteres no numéricos.
-
 DIAGRAMAS:
+
 <img width="284" height="495" alt="flujo_suma" src="https://github.com/user-attachments/assets/8fe1ecd9-3174-42d1-ba04-cd4bbc919511" />
 <img width="249" height="492" alt="flujo_testa" src="https://github.com/user-attachments/assets/d02ab4e1-c9bc-4237-9f1a-d300d7c5d028" />
 <img width="302" height="481" alt="flujo_division" src="https://github.com/user-attachments/assets/d45bd7c3-e4a9-40e7-91d8-1fb281d872de" />
