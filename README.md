@@ -14,19 +14,8 @@ Calculadora creada en Flet que permite sumar, restar, dividir, multiplicar, saca
 - Instalar dependencias con pip install flet.
 
 ## 📂 Estructura de archivos
-Practica-03-CALCULADORA/
-│── README.md
-│──.gitattributes
-│──.gitignore
-│──pyproject (HIDDEN)
-│── flujo_suma.png
-│── flujo_resta.png
-│── flujo_division.png
-└── src/
-	├── main.py
-	└── assets/
-        ├──splash_android.pngs
-        └──icon.png
+
+<img width="263" height="271" alt="Estructura" src="https://github.com/user-attachments/assets/f23aa72f-025e-49dd-a304-a3d104bd278f" />
 
 ## 🧩 Explicación del código
 Describe las funciones principales.
