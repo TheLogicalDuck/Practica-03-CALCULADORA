@@ -1,48 +1,49 @@
 import flet as ft
 import math
 
-def main(page):
-    page.title = "Calculadora Simple"
-    page.color = ft.Colors.BLUE_800
+def main(page: ft.Page):
+    page.title = "Claculadoradoradora la exploradora"
+    page.bgcolor = ft.Colors.GREEN_500
 
-    # Título
+    #Título
     titulo = ft.Text(
-        "Calculadora Básica",
-        size=28,
-        color=ft.Colors.YELLOW_100,
+        "Calculadora Bieeen Básica",
+        size=20,
+        color=ft.Colors.BLACK,
         text_align="center",
         weight="bold"
     )
 
-    # Entradas
+    #Entradas
     num1 = ft.TextField(
         label="Número 1",
         width=200,
-        text_style=ft.TextStyle(color=ft.Colors.YELLOW_100)
+        text_style=ft.TextStyle(color=ft.Colors.RED_100)
     )
     num2 = ft.TextField(
         label="Número 2",
         width=200,
-        text_style=ft.TextStyle(color=ft.Colors.YELLOW_100)
+        text_style=ft.TextStyle(color=ft.Colors.AMBER_300)
     )
     resultado = ft.Text(
         value="Resultado: ",
-        color=ft.Colors.YELLOW_100,
+        size=20,
+        color=ft.Colors.PINK_100,
         text_align="center"
     )
 
-    # Label informativo mejorado
+    #Label informativo meeejorado
     info = ft.Container(
         content=ft.Text(
-            "Para el botón Porcentaje: el campo de arriba es el número base y el de abajo es el porcentaje (%) que quieres calcular.",
+            "Para el botón porcentaje: el campo de arriba es el número base y el de abajo es el porcentaje",
             size=13,
-            color=ft.Colors.YELLOW_100,
+            color=ft.Colors.PURPLE_100,
             text_align="center",
             italic=True,
             max_lines=2,
             overflow="clip"
         ),
-        alignment=ft.Alignment.center,
+        alignment=ft.alignment.center,
         width=400,
         padding=5
     )
@@ -52,10 +53,10 @@ def main(page):
         resultado.value = f"Resultado: {valor}"
         page.update()
 
-    # Funciones operaciones
+    # Funciones de operaciones
     def suma(e):
         try:
-            res = float(num1.value) + float(num2.value)
+            res=float(num1.value) + float(num2.value)
             mostrar_resultado(res)
         except:
             mostrar_resultado("Error")
@@ -65,41 +66,40 @@ def main(page):
             res = float(num1.value) - float(num2.value)
             mostrar_resultado(res)
         except:
-            mostrar_resultado("Error")
-
+            mostrar_resultado("Errroooor")
     def multiplicacion(e):
         try:
             res = float(num1.value) * float(num2.value)
             mostrar_resultado(res)
         except:
             mostrar_resultado("Error")
-
+    
     def division(e):
         try:
             if float(num2.value) == 0:
-                mostrar_resultado("División por cero")
+                mostrar_resultado("División inválida (por cero)")
             else:
-                res = float(num1.value) / float(num2.value)
+                res=float(num1.value) / float(num2.value)
                 mostrar_resultado(res)
         except:
             mostrar_resultado("Error")
-
-    def porcentaje(e):
+    
+    def porcentaje (e):
         try:
             res = (float(num1.value) * float(num2.value)) / 100
             mostrar_resultado(res)
         except:
-            mostrar_resultado("Error")
+            mostrar_resultado("Error!11!!1111!!'1")
 
     def raiz_cuadrada(e):
         try:
             res1 = math.sqrt(float(num1.value))
             res2 = math.sqrt(float(num2.value))
-            mostrar_resultado(f"{num1.value}^(1/2) = {res1:.2f} {num2.value}^(1/2)={res2:.2f}")
+            mostrar_resultado(f"✔{num1.value}={res1:.2f}  ✔{num2.value}={res2:.2f}")
         except:
             mostrar_resultado("Error")
 
-    # Layout general, todo centrado
+    #Layout general, todo todito centradito
     page.add(
         ft.Column(
             [
@@ -108,27 +108,31 @@ def main(page):
                 ft.Row([num2], alignment="center"),
                 ft.Row(
                     [
-                        ft.ElevatedButton("Suma", on_click=suma, width=120),
-                        ft.ElevatedButton("Restar", on_click=resta, width=120),
-                        ft.ElevatedButton("Multiplicar", on_click=multiplicacion, width=120),
+                        ft.ElevatedButton("➕ Sumar", on_click=suma, width=120),
+                        ft.ElevatedButton("➖ Restar", on_click=resta, width=120),
+                        ft.ElevatedButton("✖ Multiplicar", on_click=multiplicacion, width=120),
                     ],
                     spacing=10,
                     alignment="center"
                 ),
                 ft.Row(
                     [
-                        ft.ElevatedButton("Dividir", on_click=division, width=120),
-                        ft.ElevatedButton("Porcentaje", on_click=porcentaje, width=120),
-                        ft.ElevatedButton("√ Raíz Cuadrada", on_click=raiz_cuadrada, width=120),
+                        ft.ElevatedButton("➗ Dividir", on_click=division, width=120),
+                        ft.ElevatedButton("🔘 Porcentaje", on_click=porcentaje, width=120),
+                        ft.ElevatedButton("✔ Raíz Cuadrada", on_click=raiz_cuadrada, width=120),
                     ],
                     spacing=10,
                     alignment="center"
                 ),
                 ft.Row([resultado], alignment="center"),
-                ft.Row([info], alignment="center"),  # Label informativo al final y centrado
+                ft.Row([info], alignment="center"), # Label informativo al final y centrado
             ],
+            alignment="center",
+            horizontal_alignment="center",
+            expand=True,
             spacing=15
         )
     )
+
 
 ft.app(target=main, view=ft.WEB_BROWSER)
