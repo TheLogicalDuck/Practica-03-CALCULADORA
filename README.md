@@ -64,7 +64,10 @@ La Calculadora Básica permite realizar operaciones de suma, resta, multiplicaci
 4. Ver el resultado.
 
 ## 📸 Ejemplo
-
+<img width="1266" height="713" alt="calculadora 1" src="https://github.com/user-attachments/assets/59d8d63c-5279-4efc-8191-802e2ae24b80" />
+<img width="1266" height="713" alt="calculadora2" src="https://github.com/user-attachments/assets/9e4083a5-acf0-4ae2-95f0-004cd4d86141" />
+<img width="1266" height="713" alt="calculadora3" src="https://github.com/user-attachments/assets/51ca3427-411e-42ca-8265-c32d16ff276c" />
+![clacludaldoragif](https://github.com/user-attachments/assets/b2be8ade-1fcc-4bbb-9863-f6e100d63825)
 
 ## ❌ Errores comunes
 - División entre cero.
